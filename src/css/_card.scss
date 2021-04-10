@@ -1,0 +1,105 @@
+.App-Card {
+	flex: 1 300px;;
+	width: 33%;
+	min-height: 500px;
+    max-height: 500px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border: solid 1px black;
+    background: #2b2e4a;
+    color: #FFFFFF;
+    box-shadow: 0 2px 4px rgb(0, 0, 0 / 10%), 0 8px 16px rgb(0, 0, 0 / 10%);
+    margin: 80px 10px;
+    // align-self: baseline;
+
+    div {
+        margin: 20px 0;
+    }
+    .Card-Image {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex: 1 100px;
+        position: relative;
+        div {
+            border-radius: 50%;
+            width: 200px;
+            background: #e84545;
+            box-shadow: 0 2px 4px rgb(0, 0, 0 / 10%), 0 8px 16px rgb(0, 0, 0 / 10%);
+            position: absolute;
+            top: -100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        img {
+            width: 200px;
+        }
+    }
+
+    .Card-Button {
+        flex: 1;
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        align-items: center;
+
+        button {
+            flex: 1;
+            color: #FFFFFF;
+            width: 90%;
+            margin: 0 auto;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 1rem;
+            background: #e84545;
+            border: none;
+        }
+    }
+
+    .Card-Info {
+        flex: 1;
+        margin: 20px 0;
+
+        .Card-Info-Data {
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+            padding: 10px 20px;
+            div {
+                flex: 1 40%;
+                text-align: left;
+                display: flex;
+                flex-flow: column;
+                margin: 10px 10px;
+                align-content: center;
+                span {
+                    background: #903749;
+                    border-radius: 10px;
+                    padding: 10px;
+                    display: inline-block;
+                    text-align: center;
+                }
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        ul > li {
+            font-size: 20px; 
+            list-style: circle;     
+            text-align: start;     
+        }
+
+        ul > li:hover {
+            color: #903749;
+        }
+    }
+}

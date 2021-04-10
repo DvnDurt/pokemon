@@ -1,0 +1,66 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	width: 100%;
+    background: #EBEBFA;
+}
+
+.App-Container {
+    width: 90%;
+	// min-height: calc(90vh - 60px);
+    margin: 70px auto;
+	display: flex;
+	flex-flow: column wrap;
+	padding: 30px;
+	position: relative;
+
+	.App-Content {
+		flex: 1;
+		display: flex;
+		flex-flow: row wrap;
+		align-content: flex-start;
+	}
+
+	.App-Paginator {
+		flex: 1;
+		display: flex;
+		justify-content: flex-end;
+		align-items: baseline;
+		margin: 40px 0;
+
+		button {
+			color: #FFFFFFFF;
+			line-height: 2rem;
+			width: 20%;
+			background: #e84545;
+			border: none;
+			margin-right: 10px;
+			border-radius: 15px;
+		}
+	}
+	
+}
+
+@media(max-width: 375px) {
+	.App-Container {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+// Utils
+.d-none {
+	display: none;
+}
+
+
+@import './header'; 
+@import './card';
+
+
+

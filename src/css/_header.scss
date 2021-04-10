@@ -1,0 +1,47 @@
+.App-Header {
+    min-height: 60px;
+    width: 100%;
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    input {
+        width: 40%;
+        line-height: 2rem;
+        padding-left: 10px;
+    }
+
+    button {
+        line-height: 2rem;
+    }
+
+    .App-Header-Image {
+        flex: 1 300px;
+        // align-self: baseline;
+        img {
+            max-width: 100px;
+        }
+    }
+
+    .App-Header-Form {
+        flex: 2 300px;
+    }
+}
+
+@media(max-width: 375px) {
+	.App-Header {    
+        input {
+            width: 90%;
+            line-height: 2rem;
+            padding-left: 10px;
+        }
+    
+        button {
+            line-height: 2rem;
+        }
+    }
+}
