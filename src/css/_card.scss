@@ -1,5 +1,5 @@
 .App-Card {
-	flex: 1 300px;;
+	flex: 1 300px;
 	width: 33%;
 	min-height: 500px;
     max-height: 500px;
@@ -11,7 +11,6 @@
     color: #FFFFFF;
     box-shadow: 0 2px 4px rgb(0, 0, 0 / 10%), 0 8px 16px rgb(0, 0, 0 / 10%);
     margin: 80px 10px;
-    // align-self: baseline;
 
     div {
         margin: 20px 0;
@@ -101,5 +100,12 @@
         ul > li:hover {
             color: #903749;
         }
+    }
+}
+
+@media(max-width: 540px) {
+    .App-Card {
+        width: 100%;
+        margin: 100px 5px;
     }
 }

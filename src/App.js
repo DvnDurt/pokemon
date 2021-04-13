@@ -10,7 +10,7 @@ function App() {
     isLoading: true
   });
 
-  const url = 'https://pokeapi.co/api/v2/pokemon/?offset=8&limit=8';
+  const url = 'https://pokeapi.co/api/v2/pokemon/?offset=10&limit=10';
 
   useEffect(() => {
     getUrls(url);

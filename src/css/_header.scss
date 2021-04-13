@@ -32,16 +32,24 @@
     }
 }
 
-@media(max-width: 375px) {
+@media(max-width: 540px) {
 	.App-Header {    
+        display: block;
+
         input {
-            width: 90%;
+            width: 80%;
+            margin: 0 auto;
             line-height: 2rem;
             padding-left: 10px;
         }
     
         button {
             line-height: 2rem;
+        }
+
+        .App-Header-Form {
+            width: 80%;
+            margin: 0 auto;
         }
     }
 }

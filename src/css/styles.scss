@@ -45,11 +45,19 @@ html, body {
 	
 }
 
-@media(max-width: 375px) {
+@media(max-width: 540px) {
 	.App-Container {
 		width: 100%;
-		margin: 0;
+		margin: 150px 0;
 		padding: 0;
+
+		.App-Paginator {
+
+			button {
+				width: 45%;
+				margin: 0 auto;
+			}
+		}
 	}
 }
 
