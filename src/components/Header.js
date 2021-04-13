@@ -1,4 +1,5 @@
 import React,{ useState } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/pokeball.png';
 
 export default function Header() {
@@ -14,7 +15,7 @@ export default function Header() {
   return(
     <div className="App-Header">
         <div className="App-Header-Image">
-          <img src={logo} />
+          <Link to="/"><img src={logo} /></Link> 
         </div>
         <div className='App-Header-Form'>
           <input 
@@ -25,6 +26,9 @@ export default function Header() {
           <button
             onClick={ handleClick }
           >Buscar</button>
+        </div>
+        <div className="App-Header-Links">
+          <Link to='/all'>Nuevo Diseño</Link>
         </div>
     </div>
   )
